@@ -118,7 +118,7 @@ function checkout(){
   const totalSpan = document.getElementById('total-price');
  alert(`Your order of $${totalSpan.textContent} has been placed...taking you to home page`);
  localStorage.clear();
- window.location = "../index.html";
+ window.location = "/simpleshoestore/index.html";
   
 }
 
