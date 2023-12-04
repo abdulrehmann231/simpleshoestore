@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike.zone</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <header class="contact">
+        <a href="index.html" class="logo">Nike<span>.zone</span></a>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="store.html">Sneakers</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+       </div>
+      </header>
+      <main>
+        <div id="content">
+          <aside id="contact">
+            <h1>Cont<span>a</span>ct</h1>
+            <article class="isi-contact">
+              <section>
+                <p id="fill">FILL THIS FORM FOR YOUR COMPLAIN OR SUGGESTION</p>
+                <form name="contact-form">
+                  <div class="formcolumn1">
+                    <input id="form1" name="name" placeholder="Name" size="30" type="text" value="" />
+                  </div>
+                  <div class="formcolumn2">
+                    <input id="form2" name="email" placeholder="Email" size="30" type="text" value="" />
+                  </div>
+                  <div class="formcolumn3">
+                    <textarea cols="25" id="form3" name="message" placeholder="Message" rows="7"></textarea>
+                  </div>
+                  <div class="formcolumn4">
+                    <input id="form4" type="button" onclick="savemessage()" value="Send" />
+                  </div>
+                </form>
+              </section>
+            </article>
+            
+          </aside>
+        </div>
+      </main>
+
+      <script src="script/main.js"></script>
+</body>
+</html>

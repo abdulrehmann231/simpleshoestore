@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike.zone</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <header class="store">
+        <a href="index.html" class="logo">Nike<span>.zone</span></a>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="store.html">Sneakers</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+       </div>
+      </header>
+      <main>
+        <div id="content">
+          <div id="sneakers">
+            <h1><span>S</span>tyle With <span>N</span>ike</h1>
+            <article class="type1">
+              <section>
+                <img src="assets/image/Aj4.png" alt="Skate Nike Dunk" />
+                <p class="products">Skate Nike Dunk</p>
+                <p>$450</p>
+                <button class="shoe buy1" onclick="addtocart(1)">BUY</button>
+              </section>
+              <section>
+                <img src="assets/image/Aj1.png" alt="Air Jordan 1 Transparent" />
+                <p class="products">Air Jordan 1 Transparent</p>
+                <p>$700</p>
+                <button class="shoe buy2" onclick="addtocart(2)">BUY</button>
+              </section>
+              <section>
+                <img src="assets/image/Aj2.png" alt="Nike SB Dunk" />
+                <p class="products">Nike SB Dunk</p>
+                <p>$850</p>
+                <button class="shoe buy3" onclick="addtocart(3)">BUY</button>
+              </section>
+            </article>
+    
+            <article class="type2">
+              <section>
+                <img src="assets/image/Aj3.png" alt="Nike Air Jordan 3 Retro OG Black" />
+                <p class="products">Nike Air Jordan 3 Retro OG Black</p>
+                <p>$600</p>
+                <button class="shoe buy4" onclick="addtocart(4)">BUY</button>
+              </section>
+              <section>
+                <img src="assets/image/Airmax1.png" alt="Nike KD" />
+                <p class="products">Nike KD</p>
+                <p>$900</p>
+                <button class="shoe buy5" onclick="addtocart(5)">BUY</button>
+              </section>
+              <section>
+                <img src="assets/image/Airmax2.png" alt="Nike Air Max White" />
+                <p class="products">Nike Air Max White</p>
+                <p>$750</p>
+                <button class="shoe buy6" onclick="addtocart(6)">BUY</button>
+              </section>
+            </article>
+          </div>
+          <button class="btn cart" onclick="window.location.href='cart.html'">VIEW CART</button>
+        </div>
+        
+      </main>
+      <script src="script/main.js"></script>
+</body>
+</html>

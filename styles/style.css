@@ -1,0 +1,979 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+/*Navigation*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  padding: 10px 80px;
+  z-index: 10000000;
+}
+
+header.about,header.store,header.contact {
+  padding: 2px 80px;
+  background-color: #5a5353;
+}
+
+
+#fill {
+  color : #fff;
+}
+
+
+
+
+header .logo {
+  position: relative;
+  text-decoration: none;
+  font-size: 2.5em;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header .logo span {
+  font-size: 32px;
+  color: rgb(253, 80, 80);
+  font-weight: normal;
+  transition: 0.3s;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  list-style: none;
+}
+
+.nav li a {
+  position: relative;
+  margin-left: 50px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  transition: 0.3s;
+}
+
+.nav li a:hover {
+  color: rgb(253, 80, 80);
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+.bar:nth-child(3){
+  width: 15px;
+}
+
+#sneakers, #contact {
+  scroll-margin-top: 5rem;
+}
+
+#about {
+  scroll-margin-top: 3rem;
+}
+
+/*Banner*/
+.back {
+  width: 100%;
+  max-height: 650px;
+  position: fixed;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+}
+
+#banner h1 {
+  position: absolute;
+  top: 150px;
+  margin: 0 80px;
+  color: white;
+  font-size: 4em;
+}
+
+#cartcontent h1{
+  text-align: center;
+  margin-top : 8%;
+}
+#banner p {
+  position: absolute;
+  top: 245px;
+  margin: 0 80px;
+  color: white;
+  font-size: 1.5em;
+}
+.start{
+  top: 360px;
+}
+.btn {
+  position: absolute;
+  top: 400px;
+  text-decoration: none;
+  border: none;
+  margin: 0 80px;
+  padding: 5px 40px;
+  font-size: 1.5em;
+  background-color: rgb(253, 80, 80);
+  color: #fff;
+  cursor: pointer;
+}
+.cart-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 10%;
+  top : 90%;
+}
+.check{
+  text-decoration: none;
+  border: none;
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px 40px;
+  font-size: 1.5em;
+  background-color: rgb(253, 80, 80);
+  color: #fff;
+  cursor: pointer;
+}
+.cart
+{
+display: flex;
+top : 100%;
+margin-top: 20px;
+left: 37%;
+
+}
+#cartcontent{
+  position: relative;
+}
+.cart #data{
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+.shoe{
+  text-decoration: none;
+  border: none;
+  margin: 0 35%;
+  padding: 5px 40px;
+  font-size: 1.5em;
+  background-color: rgb(253, 80, 80);
+  color: #fff;
+  cursor: pointer;
+}
+.btn:active {
+  box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+/*content*/
+#content {
+  position: absolute;
+  top: 15%;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  
+
+  
+}
+
+#about {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  margin: 0 80px;
+}
+
+.pic {
+  width: 400px;
+  max-height: 300px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+#about section h1 {
+  margin-top: 30px;
+  font-size: 2em;
+  text-align: left;
+}
+
+#about span , span{
+  color: rgb(253, 80, 80);
+  font-size: 1.5em;
+}
+
+#about section p {
+  text-align: justify;
+  margin-right: 40px;
+}
+
+#sneakers h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#sneakers span {
+  color: rgb(253, 80, 80);
+  font-size: 1.5em;
+}
+
+.type1 section{
+  position: relative;
+}
+.type2 section{
+  position: relative;
+}
+#sneakers .type1,
+.type2 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  margin: 0 80px;
+  padding: 10px;
+}
+
+.type1 section img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 350px;
+  margin: 0 20px;
+  object-fit: cover;
+}
+
+.type1 section p {
+  text-align: center;
+  line-height: 25px;
+}
+
+.products {
+  margin-top: 15px;
+}
+
+.type2 section img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 350px;
+  margin: 0 20px;
+  margin-top: 5px;
+  object-fit: cover;
+}
+
+.type2 section p {
+  text-align: center;
+  line-height: 25px;
+}
+
+/*aside*/
+#contact h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#contact span {
+  color: rgb(253, 80, 80);
+  font-size: 1.5em;
+}
+
+.isi-contact {
+  
+  margin: 0 170px 80px 170px;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+}
+
+.isi-contact section , #cartcontent .cart{
+  max-height: 500px;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #5a5353;
+  display: inline-block;
+}
+
+#data{
+  position: relative;
+  max-height: 400px;
+  width: 75%;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
+  left: 12%;
+}
+#cart-table
+{
+ margin-left: 38%;
+}
+#cartcontent .cart section p ,#cartcontent .cart section ul {
+  color: rgb(253, 80, 80);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  list-style: none;
+}
+th{text-align: left;}
+
+
+.isi-contact section p {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.isi-contact section p {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#total-price{
+  font-size: 1em;
+}
+
+#form1,
+#form2 {
+  display: inline-block;
+  width: 100%;
+  margin: 5px auto;
+  padding: 10px;
+  background: #fff;
+  color: #222;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#form3 {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5px;
+  padding: 10px;
+  background: #fff;
+  color: #222;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#form4 {
+  background: rgb(253, 80, 80);
+  color: #fff;
+  width: 90px;
+  height: 30px;
+  float: right;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#form4:active {
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.formcolumn4 {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.formcolumn1,
+.formcolumn2 {
+  float: left;
+  width: 50%;
+}
+
+.formcolumn1,
+.formcolumn2 {
+  margin: 0 0 10px 0;
+  padding: 0 10px 0 0;
+}
+
+.formcolumn2 {
+  padding: 0 0 0 10px;
+}
+
+#profil {
+  background-color: #5a5353;
+  padding: 20px 20px 90px 20px;
+}
+
+#profil p {
+  font-size: 2em;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#profil h1 {
+  margin: 10px 0;
+  color: white;
+}
+
+.img-profil {
+  border-radius: 50%;
+  margin-right: 70px;
+  border: 5px solid white;
+  box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+  height: 300px;
+}
+
+.form-profil h2 {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+/*Display Mobile*/
+@media screen and (max-width: 1024px) {
+
+
+  /*Navigation*/
+  header {
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  header.about,header.contact,header.store {
+    padding: 10px 20px;
+    background-color: #5a5353;
+  }
+
+  header .logo {
+    position: relative;
+    font-size: 20px;
+    transition: 0.3s;
+  }
+
+  header .logo span {
+    font-size: 18px;
+  }
+
+  .nav li a {
+    margin-left: 0;
+  }
+
+  /*Banner*/
+  .back {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 300px;
+    object-position: left;
+    z-index: -1;
+  }
+
+  #banner h1 {
+    top: 85px;
+    margin: 0 20px;
+    color: white;
+    font-size: 30px;
+  }
+
+  #banner p {
+    position: absolute;
+    top: 130px;
+    margin: 0 20px;
+    color: white;
+    font-size: 15px;
+  }
+
+  .btn {
+    top: 235px;
+    margin: 0 20px;
+    padding: 5px 30px;
+    font-size: 15px;
+  }
+  .cart
+  {
+
+   top : 100%;
+   margin-top: 20px;
+   left: 40.5%;
+
+ }
+ #cart-table
+{
+ margin-left: 30%;
+} 
+  .shoe{
+    text-decoration: none;
+    border: none;
+    margin: 0 30%;
+    padding: 5px 40px;
+    font-size: 1.5em;
+    background-color: rgb(253, 80, 80);
+    color: #fff;
+    cursor: pointer;
+  }
+  .btn:active {
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+  }
+
+  /*content*/
+  #content {
+    top: 10%;
+    background: rgb(255, 255, 255);
+    width: 100%;
+  }
+
+  #about {
+    background-color: rgb(255, 255, 255);
+    margin: 0 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    scroll-margin-top: 4rem;
+  }
+
+  .pic {
+    width: 250px;
+    max-height: 150px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  #about section h1 {
+    margin-top: 0;
+    font-size: 1.5em;
+    text-align: left;
+  }
+
+  #about section p {
+    text-align: justify;
+    margin-right: 0;
+    font-size: 12px;
+  }
+
+  
+  #sneakers h1 {
+    
+    font-size: 1.5em;
+  }
+
+  #sneakers .type1,
+  .type2 {
+    flex-wrap: wrap;
+    margin: 0 20px;
+    padding: 10px;
+  }
+
+  .type1 section img {
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .type1 section p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+
+  .type2 section img {
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .type2 section p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+
+  /*asise*/
+  #contact h1 {
+    font-size: 1.5em;
+  }
+
+  .isi-contact {
+    margin: 0 5px 50px 5px;
+    padding: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  section p {
+    font-size: 13px;
+    
+  }
+
+  .isi-contact section {
+    margin-left: 0;
+    max-height: 500px;
+    max-width: 500px;
+    padding: 20px;
+
+  }
+
+  #form1,
+  #form2 {
+    display: inline-block;
+    width: 100%;
+    margin: 5px auto;
+    padding: 8px;
+    background: #fff;
+    color: #222;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  #form3 {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background: #fff;
+    color: #222;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .formcolumn1,
+  .formcolumn2 {
+    margin: 0 0 7px 0;
+    padding: 0 7px 0 0;
+  }
+
+  .formcolumn2 {
+    padding: 0 0 0 7px;
+  }
+
+  #profil {
+    padding: 20px 20px 40px 20px;
+  }
+
+  #profil h1 {
+    margin: 5px 0;
+  }
+
+  .img-profil {
+    border-radius: 50%;
+    margin-right: 0;
+    height: 200px;
+    margin: 30px 0;
+  }
+
+  .form-profil h2 {
+    margin-bottom: 5px;
+    font-weight: 400;
+    text-align: center;
+    font-size: small;
+  }
+
+  .medsos {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .medsos i {
+    font-size: 2rem;
+  }
+
+
+}
+
+@media screen and (width: 1024px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  .isi-contact {
+
+    margin: 0 50px 50px 50px;
+    padding: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .isi-contact section {
+    max-width: none;
+  }
+  #cart-table
+{
+ margin-left: 34%;
+}
+  .nav li a {
+    margin-left: 30px;
+  }
+
+  #banner h1 {
+    top: 90px;
+    left: 2%;
+    font-size: 45px;
+  }
+
+  #banner p {
+    top: 155px;
+    left: 2%;
+    font-size: 25px;
+  }
+
+  .btn {
+    top: 220px;
+    left: 2%;
+    font-size: 25px;
+  }
+  .cart
+  {
+  
+  top : 100%;
+  margin-top: 20px;
+  left: 37%;
+  
+  }
+  #about {
+    flex-wrap: nowrap;
+    margin: 0 50px;
+  }
+
+  #about section p {
+    margin-right: 2rem;
+  }
+
+  .form-profil h2 {
+    text-align: left;
+    font-size: medium;
+  }
+
+  .medsos {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: left;
+  }
+
+  .medsos i {
+    font-size: 2.5rem;
+  }
+
+  .img-profil {
+    margin-right: 50px;
+  }
+
+}
+
+@media screen and (width: 768px) {
+  .isi-contact {
+    margin: 0 50px 50px 50px;
+    padding: 30px;
+    
+  }
+
+  header {
+    padding: 20px 40px;
+  }
+
+ 
+
+  #banner h1 {
+    left: 3%;
+  }
+
+  #banner p {
+    left: 3%;
+  }
+
+  .btn {
+    left: 3%;
+  }
+  .cart
+  {
+  
+  top : 100%;
+  margin-top: 20px;
+  left: 37%;
+  
+  }
+  #cart-table
+{
+ margin-left: 26%;
+}
+  #about {
+    flex-wrap: nowrap;
+    margin: 0 50px;
+  }
+
+  #about section p {
+    margin-right: 2rem;
+  }
+
+  .form-profil h2 {
+    text-align: left;
+  }
+
+  .medsos {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: left;
+  }
+
+  .isi-contact section {
+    max-width: none;
+  }
+
+  .img-profil {
+    margin-right: 50px;
+  }
+
+}
+
+
+@media screen and (width: 320px) {
+  #banner h1 {
+    position: absolute;
+    top: 100px;
+    margin: 0 20px;
+    color: white;
+    font-size: 20px;
+  }
+  #cart-table
+{
+ margin-left: 0%;
+}
+  #banner p {
+    position: absolute;
+    top: 130px;
+    margin: 0 20px;
+    color: white;
+    font-size: 15px;
+  }
+
+  .btn {
+    position: absolute;
+    top: 160px;
+    text-decoration: none;
+    border: none;
+    margin: 0 20px;
+    padding: 5px 30px;
+    font-size: 15px;
+    background-color: rgb(253, 80, 80);
+    color: #fff;
+    cursor: pointer;
+  }
+  .cart
+  {
+  
+  top : 100%;
+  margin-top: 20px;
+  left: 37%;
+  
+  }
+}
+
+@media screen and (width: 280px) {
+  header {
+    width: 280px;
+  }
+
+  #banner h1 {
+    top: 85px;
+    font-size: 23px;
+  }
+  #cart-table
+{
+ margin-left: -6%;
+}
+  #banner p {
+    position: absolute;
+    top: 120px;
+    font-size: 13px;
+  }
+
+  .btn {
+    top: 155px;
+    font-size: 13px;
+  }
+  .cart
+{
+
+top : 100%;
+margin-top: 20px;
+left: 33%;
+
+}
+}
+
+
+@media only screen and (max-width: 990px) {
+  #sneakers, #contact {
+    scroll-margin-top: 4rem;
+  }
+
+  .nav {
+    position: fixed;
+    left: -100%;
+    top: 48px;
+    z-index: 1000000;
+    flex-direction: column;
+    background-color: #5a5353;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding-bottom: 10px;
+  }
+  #cart-table
+  {
+   margin-left: 30%;
+  }
+  .nav.active {
+    left: 0;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  header.active {
+    background-color: #5a5353;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    width: 25px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #cart-table
+{
+ margin-left: 20%;
+} 
+}
+@media only screen and (width: 280px) {
+  .nav {
+    width: 280px;
+  }
+}
