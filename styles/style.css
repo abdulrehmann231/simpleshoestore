@@ -966,14 +966,16 @@ left: 33%;
     width: 25px;
   }
 }
-@media only screen and (max-width: 650px) {
-  #cart-table
-{
- margin-left: 20%;
-} 
-}
 @media only screen and (width: 280px) {
   .nav {
     width: 280px;
+  }
+  .start{
+    top: 260px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .start{
+    top: 260px;
   }
 }
